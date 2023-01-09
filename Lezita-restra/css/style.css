@@ -1,0 +1,434 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    background-color: #fff;
+    color: #333;
+    line-height: 1.6;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+h1,h2 {
+    font-weight: 400;
+    line-height: 1.2;
+}
+    
+img {
+    width: 100%;
+}
+span {
+    color: var(--warning);
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--dark);
+    opacity: 0.8;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    padding: 0 3rem;
+}
+
+.navbar a {
+    color: #fff;
+    padding: 1rem 2rem;
+    margin: 0.5rem;
+}
+
+.navbar .brand {
+    font-weight: 400;
+}
+
+.navbar h1 {
+    font-size: 3rem;
+}
+
+.navbar span {
+    color: var(--warning);
+}
+
+.navbar a:hover {
+    border-bottom: 2px solid var(--warning);
+}
+
+.navbar ul {
+    display: flex;
+}
+
+/* header */
+.main-header {
+    background-image: url('../img/bg-1.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: #fff;
+    position: relative;
+}
+
+.main-header .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+
+.main-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:rgba(0, 0, 0, 0.6);
+}
+
+.main-header * {
+    z-index: 5;
+}
+
+.content {
+    font-size: 1.5rem;
+    color:darkgrey ;
+}
+
+.main-header .content h1 {
+    font-size: 5.5rem;
+}
+
+.main-header .content p{
+    font-size: 2.3rem;
+    max-width: 60rem;
+    margin: 2rem 0 3rem;
+}
+.sec-info {
+    height: 600px;
+    background-color: #8C7452;
+    position: relative;
+}
+
+.info-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 40px;
+}
+
+
+.tarif-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0px 20px;
+}
+
+.tarif-container .box {
+    width: 450px;
+    height: 450px;
+    box-shadow: rgba(255, 254, 254, 0.24) 0px 3px 10px;
+    border-radius: 20px;
+    margin: 30px;
+}
+
+.tarif-container .tatlı {
+    background-image: url('../img/baklava-bg.jpg');
+}
+.tarif-container .steaks {
+    background-image: url('../img/steak-bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.tarif-container .drinks {
+    background-image: url('../img/drinks-bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+footer{
+    padding: 20px;
+}
+
+/* Hakkımızda Sayfası */
+
+.about-header-bg {
+    background-image: url('../img/qway-hakkimizda.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    color: #fff;
+}
+.hakkımızda{
+    margin-top: 20px;
+    padding: 20px;
+}
+.hakkımızda h1{
+    margin: 0 auto;
+    width: 50%;
+    height: auto;
+}
+
+/* İletişim sayfası */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+}
+body {
+font-family: "Roboto", Helvetica, Arial, sans-serif;
+font-weight: 100;
+font-size: 13px;
+line-height: 30px;
+color: #888;
+}
+.container {
+max-width: 400px;
+width: 100%;
+margin: 0 auto;
+position: relative;
+}
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea,
+#contact button[type="submit"] {
+font: 500 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+}
+#contact {
+background: #F9F9F9;
+padding: 25px;
+margin: 100px 0;
+box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+#contact h2 {
+display: block;
+font-size: 30px;
+font-weight: 300;
+margin-bottom: 15px;
+}
+.form-control{
+border: none !important;
+margin: 0 0 10px;
+min-width: 100%;
+padding: 0;
+width: 100%;
+}
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+width: 100%;
+border: 1px solid #ccc;
+background: #FFF;
+margin: 0 0 5px;
+padding: 10px;
+}
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact textarea:hover {
+-webkit-transition: border-color 0.4s ease-in-out;
+-moz-transition: border-color 0.4s ease-in-out;
+transition: border-color 0.4s ease-in-out;
+border: 1px solid #aaa;
+}
+#contact textarea {
+height: 120px;
+max-width: 100%;
+resize: none;
+}
+#contact button[type="submit"] {
+cursor: pointer;
+width: 100%;
+border: none;
+background: #79A7A8;
+color: #FFF;
+margin: 0 0 5px;
+padding: 10px;
+font-size: 15px;
+}
+#contact button[type="submit"]:hover {
+background: #355C7D;
+-webkit-transition: background 0.4s ease-in-out;
+-moz-transition: background 0.4s ease-in-out;
+transition: background-color 0.4s ease-in-out;
+}
+#contact button[type="submit"]:active {
+box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+#contact input:focus,
+#contact textarea:focus {
+outline: 0;
+border: 1px solid #aaa;
+}
+
+/* Tarifler Sayfası */
+
+.tarif-header-bg {
+    background-image: url('../img/tarif-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    color: #fff;
+}
+.öykü-header-bg {
+    background-image: url('../img/öyküler-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    color: #fff;
+}
+
+.tarifler {
+    width: 100%;
+    height: auto;
+    background-color: #333;
+    border: 1px solid #333;
+}
+
+.tarifler .tarif-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.tarifler .tarif-container .tf-box {
+    height: 450px;
+    background-position: center;
+    background-size: cover;
+    width:400px;
+    background-color: var(--dark);
+    text-align: center;
+    color: #FFF;
+    border-radius: 25px;
+    margin: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.sea-header-bg {
+    background-image: url('../img/tf-1bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    color: #fff;
+}
+
+.pen-header-bg {
+    background-image: url('../img/tarif-bg2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    color: #fff;
+}
+
+.morelto-header-bg {
+    background-image: url('../img/tarif-bg3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    color: #fff;
+}
+.steak-header-bg {
+    background-image: url('../img/tarif-bg4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    color: #fff;
+}
+
+.fishes-header-bg {
+    background-image: url('../img/tarif-bg5.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    color: #fff;
+}
+
+.bechi-header-bg {
+    background-image: url('../img/tarif-bg6.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    color: #fff;
+}
+
+.zuch-header-bg {
+    background-image: url('../img/tarif-bg7.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    color: #fff;
+}
+
+.seafoods {
+    width: 100%;
+    border: 1px solid var(--light);
+    background-color: var(--light);
+    opacity: 0.5;
+    color: #FFF;
+    
+}
+
+.seafoods .sea-container {
+
+    background-color: var(--dark);
+    width: 90%;
+    height: 500px;
+    margin: 80px auto;
+}
+
+.seafoods .sea-container h1{
+    padding: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.seafoods .sea-container p{
+    padding: 20px;
+    font-size: 16px;
+}
